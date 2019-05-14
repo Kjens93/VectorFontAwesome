@@ -12,8 +12,8 @@ private class DummyClass {}
 
 private let bundle = Bundle(for: DummyClass.self)
 
-extension UIImage {
-    convenience init?(fa fontAwesomeId: String, compatibleWith traitCollection: UITraitCollection? = nil) {
+public extension UIImage {
+    public convenience init?(fa fontAwesomeId: String, compatibleWith traitCollection: UITraitCollection? = nil) {
         self.init(named: fontAwesomeId, in: bundle, compatibleWith: traitCollection)
     }
 }
